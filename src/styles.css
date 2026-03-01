@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 227 47% 9%;
+  --foreground: 210 25% 96%;
+  --card: 225 47% 11%;
+  --accent: 236 47% 16%;
+  --gold: 45 93% 53%;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 font-body antialiased;
+  background-image: radial-gradient(circle at top, rgba(250, 204, 21, 0.08), transparent 35%),
+    linear-gradient(180deg, #020617 0%, #020617 45%, #030712 100%);
+  min-height: 100vh;
+}
+
+.glass {
+  @apply bg-white/5 border border-white/10 backdrop-blur-xl;
+}
+
+.gold-text {
+  @apply text-yellow-400;
+}
